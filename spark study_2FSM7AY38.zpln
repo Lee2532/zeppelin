@@ -1,0 +1,230 @@
+{
+  "paragraphs": [
+    {
+      "text": "spark",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-06 10:03:35.989",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@8d5f654\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608725896523_1040790839",
+      "id": "paragraph_1608725896523_1040790839",
+      "dateCreated": "2020-12-23 12:18:16.523",
+      "dateStarted": "2021-01-06 10:03:36.017",
+      "dateFinished": "2021-01-06 10:03:43.837",
+      "status": "FINISHED"
+    },
+    {
+      "text": "import org.apache.spark.sql.SparkSession\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-12-23 12:20:18.804",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.SparkSession\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608725900526_438869273",
+      "id": "paragraph_1608725900526_438869273",
+      "dateCreated": "2020-12-23 12:18:20.526",
+      "dateStarted": "2020-12-23 12:20:18.815",
+      "dateFinished": "2020-12-23 12:20:18.919",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val spark:SparkSession \u003d SparkSession.builder()\r\n      .master(\"local[1]\")\r\n      .appName(\"SparkByExamples.com\")\r\n      .getOrCreate()   ",
+      "user": "anonymous",
+      "dateUpdated": "2020-12-23 12:20:24.051",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mspark\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@669e16b5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608725933581_2073211980",
+      "id": "paragraph_1608725933581_2073211980",
+      "dateCreated": "2020-12-23 12:18:53.581",
+      "dateStarted": "2020-12-23 12:20:24.062",
+      "dateFinished": "2020-12-23 12:20:24.206",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val dataSeq \u003d Seq((\"Java\", 20000), (\"Python\", 100000), (\"Scala\", 3000))   \r\nval rdd\u003dspark.sparkContext.parallelize(dataSeq)",
+      "user": "anonymous",
+      "dateUpdated": "2020-12-23 12:20:32.638",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdataSeq\u001b[0m: \u001b[1m\u001b[32mSeq[(String, Int)]\u001b[0m \u003d List((Java,20000), (Python,100000), (Scala,3000))\n\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ParallelCollectionRDD[5] at parallelize at \u003cconsole\u003e:27\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608726024061_163781433",
+      "id": "paragraph_1608726024061_163781433",
+      "dateCreated": "2020-12-23 12:20:24.061",
+      "dateStarted": "2020-12-23 12:20:32.647",
+      "dateFinished": "2020-12-23 12:20:33.113",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val rdd2 \u003d spark.sparkContext.textFile(\"/path/textFile.txt\")\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-12-23 12:20:42.045",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mrdd2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d /path/textFile.txt MapPartitionsRDD[7] at textFile at \u003cconsole\u003e:26\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608726032647_37726556",
+      "id": "paragraph_1608726032647_37726556",
+      "dateCreated": "2020-12-23 12:20:32.647",
+      "dateStarted": "2020-12-23 12:20:42.056",
+      "dateFinished": "2020-12-23 12:20:42.217",
+      "status": "FINISHED"
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1608726042055_374144306",
+      "id": "paragraph_1608726042055_374144306",
+      "dateCreated": "2020-12-23 12:20:42.055",
+      "status": "READY"
+    }
+  ],
+  "name": "spark study",
+  "id": "2FSM7AY38",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview2",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

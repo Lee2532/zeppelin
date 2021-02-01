@@ -3,7 +3,7 @@
     {
       "text": "spark",
       "user": "anonymous",
-      "dateUpdated": "2021-01-06 10:03:35.989",
+      "dateUpdated": "2021-01-28 14:37:03.441",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -26,7 +26,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@8d5f654\n"
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@285256c7\n"
           }
         ]
       },
@@ -36,14 +36,14 @@
       "jobName": "paragraph_1608725896523_1040790839",
       "id": "paragraph_1608725896523_1040790839",
       "dateCreated": "2020-12-23 12:18:16.523",
-      "dateStarted": "2021-01-06 10:03:36.017",
-      "dateFinished": "2021-01-06 10:03:43.837",
+      "dateStarted": "2021-01-28 14:37:03.468",
+      "dateFinished": "2021-01-28 14:37:11.917",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.SparkSession\r\n",
       "user": "anonymous",
-      "dateUpdated": "2020-12-23 12:20:18.804",
+      "dateUpdated": "2021-01-28 14:37:07.295",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -76,14 +76,14 @@
       "jobName": "paragraph_1608725900526_438869273",
       "id": "paragraph_1608725900526_438869273",
       "dateCreated": "2020-12-23 12:18:20.526",
-      "dateStarted": "2020-12-23 12:20:18.815",
-      "dateFinished": "2020-12-23 12:20:18.919",
+      "dateStarted": "2021-01-28 14:37:07.308",
+      "dateFinished": "2021-01-28 14:37:12.002",
       "status": "FINISHED"
     },
     {
       "text": "val spark:SparkSession \u003d SparkSession.builder()\r\n      .master(\"local[1]\")\r\n      .appName(\"SparkByExamples.com\")\r\n      .getOrCreate()   ",
       "user": "anonymous",
-      "dateUpdated": "2020-12-23 12:20:24.051",
+      "dateUpdated": "2021-01-28 14:37:10.196",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -106,7 +106,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mspark\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@669e16b5\n"
+            "data": "\u001b[1m\u001b[34mspark\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m \u003d org.apache.spark.sql.SparkSession@285256c7\n"
           }
         ]
       },
@@ -116,14 +116,14 @@
       "jobName": "paragraph_1608725933581_2073211980",
       "id": "paragraph_1608725933581_2073211980",
       "dateCreated": "2020-12-23 12:18:53.581",
-      "dateStarted": "2020-12-23 12:20:24.062",
-      "dateFinished": "2020-12-23 12:20:24.206",
+      "dateStarted": "2021-01-28 14:37:12.013",
+      "dateFinished": "2021-01-28 14:37:12.399",
       "status": "FINISHED"
     },
     {
       "text": "val dataSeq \u003d Seq((\"Java\", 20000), (\"Python\", 100000), (\"Scala\", 3000))   \r\nval rdd\u003dspark.sparkContext.parallelize(dataSeq)",
       "user": "anonymous",
-      "dateUpdated": "2020-12-23 12:20:32.638",
+      "dateUpdated": "2021-01-28 14:37:13.366",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -146,7 +146,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mdataSeq\u001b[0m: \u001b[1m\u001b[32mSeq[(String, Int)]\u001b[0m \u003d List((Java,20000), (Python,100000), (Scala,3000))\n\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ParallelCollectionRDD[5] at parallelize at \u003cconsole\u003e:27\n"
+            "data": "\u001b[1m\u001b[34mdataSeq\u001b[0m: \u001b[1m\u001b[32mSeq[(String, Int)]\u001b[0m \u003d List((Java,20000), (Python,100000), (Scala,3000))\n\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ParallelCollectionRDD[0] at parallelize at \u003cconsole\u003e:27\n"
           }
         ]
       },
@@ -156,8 +156,8 @@
       "jobName": "paragraph_1608726024061_163781433",
       "id": "paragraph_1608726024061_163781433",
       "dateCreated": "2020-12-23 12:20:24.061",
-      "dateStarted": "2020-12-23 12:20:32.647",
-      "dateFinished": "2020-12-23 12:20:33.113",
+      "dateStarted": "2021-01-28 14:37:13.377",
+      "dateFinished": "2021-01-28 14:37:14.093",
       "status": "FINISHED"
     },
     {

@@ -1,6 +1,1 @@
-도커 명령어
-9999포트를 내부 8080으로 하고, 뒤에 있는것들은 volume 작업
-추후 docker-compose 나 다른것으로 docker 켰을때 자동으로 켜지도록 작업할 예정
-
-
 docker run -p 9999:8080 --rm -v $PWD/logs:/logs -v $PWD/notebook:/notebook -e ZEPPELIN_LOG_DIR='/logs' -e ZEPPELIN_NOTEBOOK_DIR='/notebook' --name zeppelin apache/zeppelin:0.9.0

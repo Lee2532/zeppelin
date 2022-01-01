@@ -2,7 +2,7 @@ version: '3'
 
 services:
   zeppelin:
-    image: apache/zeppelin:0.10.0
+    build: .
     restart: always
     ports:
       - "9999:8080"
@@ -10,9 +10,11 @@ services:
       - ./logs:/opt/zeppelin/logs
       - ./notebook:/opt/zeppelin/notebook
       - ./conf:/opt/zeppelin/conf
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+    environment:
+      TZ: Asia/Seoul
 
-    # environment:
-    #   - ZEPPELIN_LOG_DIR=/zeppelin/logs
-    #   - ZEPPELIN_NOTEBOOK_DIR=/zeppelin/notebook
+
 
 

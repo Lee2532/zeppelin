@@ -701,7 +701,7 @@
 </property>
 <property>
   <name>zeppelin.notebook.cron.folders</name>
-  <value>/</value>
+  <value>*</value>
   <description>Notebook cron folders</description>
 </property>
 
